@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <strong>ChatApp</strong>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <!-- Add your other navigation links here if needed -->
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons" id="buttons">
+            <a class="button is-primary" id="loginBtn">Login</a>
+            <a class="button is-light" id="signupBtn">Signup</a>
+          </div>
+          <div class="dropdown is-right" id="profileDropdown">
+            <figure class="image" style="transform: scale(1.4);" id="profileImageWrapper">
+              <a id="profileImageLink">
+                <img src="" class="is-rounded" id="profileImage">
+              </a>
+            </figure>
+            <div class="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <button class="button is-danger" id="logoutBtn">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="box">
+        <div id="messagesContainer" class="content"></div>
+      </div>
+      <div class="box">
+        <div class="field is-grouped">
+          <div class="control is-expanded">
+            <input class="input" type="text" id="message-input" placeholder="Type your message">
+          </div>
+          <div class="control">
+            <button class="button is-primary" id="send-button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
